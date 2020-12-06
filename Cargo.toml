@@ -1,0 +1,9 @@
+[package]
+authors = ["Felipe Garcia <felipefegar@gmail.com>"]
+edition = "2018"
+name = "advent-of-code"
+version = "0.1.0"
+
+[dependencies]
+rayon = "1.5.0"
+regex = "1.4.2"
