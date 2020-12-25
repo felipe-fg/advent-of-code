@@ -23,6 +23,7 @@ mod day20;
 mod day21;
 mod day22;
 mod day23;
+mod day24;
 mod utils;
 
 fn main() {
@@ -52,6 +53,7 @@ fn main() {
         21 => day21::run(),
         22 => day22::run(),
         23 => day23::run(),
+        24 => day24::run(),
         _ => println!("invalid day"),
     }
 }
