@@ -169,7 +169,7 @@ fn build_binary_combinations(length: usize) -> Vec<String> {
 
             zero
         }
-    };
+    }
 
     build(length, String::default())
 }

@@ -145,7 +145,7 @@ fn cartesian_product(mut ranges: Vec<Range<i128>>) -> Vec<Vec<i128>> {
         } else {
             nested(ranges, items)
         }
-    };
+    }
 
     let items = ranges
         .remove(0)
