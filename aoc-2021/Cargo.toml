@@ -1,0 +1,11 @@
+[package]
+name = "aoc-2021"
+authors = ["Felipe Garcia <felipefegar@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies.aoc-utils]
+path = "../aoc-utils"
+
+[dependencies]
+itertools = "0.10.1"

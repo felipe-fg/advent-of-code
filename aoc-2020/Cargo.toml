@@ -1,0 +1,14 @@
+[package]
+name = "aoc-2020"
+authors = ["Felipe Garcia <felipefegar@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies.aoc-utils]
+path = "../aoc-utils"
+
+[dependencies]
+colored = "2.0.0"
+itertools = "0.10.1"
+rayon = "1.5.1"
+regex = "1.5.4"
