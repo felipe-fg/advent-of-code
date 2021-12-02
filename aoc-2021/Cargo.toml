@@ -9,3 +9,4 @@ path = "../aoc-utils"
 
 [dependencies]
 itertools = "0.10.1"
+rayon = "1.5.1"
