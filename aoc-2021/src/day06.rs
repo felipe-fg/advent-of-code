@@ -1,6 +1,6 @@
 use aoc_utils;
 
-type Count = u128;
+type Count = u64;
 type TimerCount = Vec<Count>;
 
 const MAX_TIMER: usize = 8;

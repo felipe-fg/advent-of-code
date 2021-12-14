@@ -2,7 +2,7 @@ use aoc_utils;
 use rayon::prelude::*;
 
 type Direction = String;
-type Value = i32;
+type Value = i64;
 type Command = (Direction, Value);
 type Horizontal = Value;
 type Depth = Value;

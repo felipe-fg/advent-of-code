@@ -5,7 +5,7 @@ use std::collections::HashMap;
 
 type Element = String;
 type Polymer = String;
-type Count = u128;
+type Count = u64;
 
 type ElementPair = (Element, Element);
 type ElementCount = (Element, Count);

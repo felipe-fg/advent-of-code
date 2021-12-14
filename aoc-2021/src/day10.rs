@@ -2,6 +2,8 @@ use aoc_utils;
 use itertools::Itertools;
 use rayon::prelude::*;
 
+type Score = u64;
+
 #[derive(Debug, Clone)]
 struct Validation {
     full: String,
@@ -72,7 +74,7 @@ fn check_line(line: &str) -> Validation {
     }
 }
 
-fn sum_syntax_error_score(validations: &[Validation]) -> usize {
+fn sum_syntax_error_score(validations: &[Validation]) -> Score {
     validations
         .iter()
         .filter(|validation| validation.status == Status::Corrupted)
@@ -80,7 +82,7 @@ fn sum_syntax_error_score(validations: &[Validation]) -> usize {
         .sum()
 }
 
-fn syntax_error_score(validation: &Validation) -> usize {
+fn syntax_error_score(validation: &Validation) -> Score {
     let error = validation
         .full
         .chars()
@@ -96,8 +98,8 @@ fn syntax_error_score(validation: &Validation) -> usize {
     }
 }
 
-fn median_autocomplete_score(validations: &[Validation]) -> usize {
-    let scores: Vec<usize> = validations
+fn median_autocomplete_score(validations: &[Validation]) -> Score {
+    let scores: Vec<Score> = validations
         .iter()
         .filter(|validation| validation.status == Status::Incomplete)
         .map(|validation| autocomplete_score(validation))
@@ -107,7 +109,7 @@ fn median_autocomplete_score(validations: &[Validation]) -> usize {
     scores[scores.len() / 2]
 }
 
-fn autocomplete_score(validation: &Validation) -> usize {
+fn autocomplete_score(validation: &Validation) -> Score {
     validation
         .stack
         .chars()
