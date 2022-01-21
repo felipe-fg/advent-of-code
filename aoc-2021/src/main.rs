@@ -22,6 +22,7 @@ mod day19;
 mod day20;
 mod day21;
 mod day22;
+mod day23;
 
 fn main() {
     let day: i32 = env::args().nth(1).expect("day").parse().expect("number");
@@ -49,6 +50,7 @@ fn main() {
         20 => day20::run(),
         21 => day21::run(),
         22 => day22::run(),
+        23 => day23::run(),
         _ => println!("invalid day"),
     }
 }
