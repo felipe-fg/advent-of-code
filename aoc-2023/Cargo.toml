@@ -1,0 +1,15 @@
+[package]
+name = "aoc-2023"
+authors = ["Felipe Garcia <felipefegar@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies.aoc-utils]
+path = "../aoc-utils"
+
+[dependencies]
+colored = "2"
+fancy-regex = "0.12"
+itertools = "0.12"
+rayon = "1"
+regex = "1"
