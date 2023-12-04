@@ -1,4 +1,5 @@
 .idea/
 target/
+inputs/
 Cargo.lock
 **/*.rs.bk
